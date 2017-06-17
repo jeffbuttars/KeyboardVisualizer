@@ -121,9 +121,11 @@ static inline __s32 i2c_smbus_read_block_data(int file, __u8 command,
                          I2C_SMBUS_BLOCK_DATA,&data))
         return -1;
     else {
-        for (i = 1; i <= data.block[0]; i++)
+        for (i = 1; i <= data.block[0]; i++) {
             values[i-1] = data.block[i];
-            return data.block[0];
+        }
+
+        return data.block[0];
     }
 }
 

@@ -89,8 +89,8 @@ AsusAura::AsusAura()
 void AsusAura::Initialize()
 {
     //Set i2c busses here
-    char *smbus_adapter_dev = "/dev/i2c-0";
-    char *smbus_adapter_dev2 = "/dev/i2c-4";
+    const char *smbus_adapter_dev = "/dev/i2c-0";
+    const char *smbus_adapter_dev2 = "/dev/i2c-4";
 
     smbus_fd = open(smbus_adapter_dev, O_RDWR);
     smbus_fd2 = open(smbus_adapter_dev2, O_RDWR);
