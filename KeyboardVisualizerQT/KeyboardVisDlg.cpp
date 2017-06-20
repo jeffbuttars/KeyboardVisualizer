@@ -89,8 +89,8 @@ void KeyboardVisDlg::update()
         ui->lineEdit_Animation_Speed->setText(QString::number(vis_ptr->anim_speed));
         ui->lineEdit_Filter_Constant->setText(QString::number(vis_ptr->filter_constant));
 
-        ui->lineEdit_Amplitude->setText(QString::number(vis_ptr->amplitude));
-        ui->lineEdit_Background_Brightness->setText(QString::number(vis_ptr->bkgd_bright));
+        ui->amplitude->setText(QString::number(vis_ptr->amplitude));
+        ui->backgroundBrightness->setText(QString::number(vis_ptr->bkgd_bright));
         ui->lineEdit_Average_Size->setText(QString::number(vis_ptr->avg_size));
         ui->lineEdit_Decay->setText(QString::number(vis_ptr->decay));
         ui->lineEdit_Delay->setText(QString::number(vis_ptr->delay));
@@ -130,8 +130,8 @@ void KeyboardVisDlg::SetVisualizer(Visualizer* v)
     ui->lineEdit_Animation_Speed->setText(QString::number(vis_ptr->anim_speed));
     ui->lineEdit_Filter_Constant->setText(QString::number(vis_ptr->filter_constant));
 
-    ui->lineEdit_Amplitude->setText(QString::number(vis_ptr->amplitude));
-    ui->lineEdit_Background_Brightness->setText(QString::number(vis_ptr->bkgd_bright));
+    ui->amplitude->setText(QString::number(vis_ptr->amplitude));
+    ui->backgroundBrightness->setText(QString::number(vis_ptr->bkgd_bright));
     ui->lineEdit_Average_Size->setText(QString::number(vis_ptr->avg_size));
     ui->lineEdit_Decay->setText(QString::number(vis_ptr->decay));
     ui->lineEdit_Delay->setText(QString::number(vis_ptr->delay));
