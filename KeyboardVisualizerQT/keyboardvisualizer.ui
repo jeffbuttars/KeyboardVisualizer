@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>829</width>
-    <height>1272</height>
+    <width>963</width>
+    <height>676</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -24,9 +24,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>1200</y>
-      <width>771</width>
-      <height>61</height>
+      <y>640</y>
+      <width>596</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -36,26 +36,49 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <widget class="QWidget" name="formLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>21</x>
-      <y>460</y>
-      <width>492</width>
-      <height>42</height>
+      <x>0</x>
+      <y>0</y>
+      <width>951</width>
+      <height>606</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_5">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
+    <layout class="QFormLayout" name="formLayout_3">
+     <item row="0" column="0">
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Background_Brightness">
+         <property name="text">
+          <string>Background Brightness</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="backgroundBrightness">
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="maximum">
+          <number>255</number>
+         </property>
+         <property name="value">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
         <widget class="QLabel" name="label_Amplitude">
          <property name="text">
           <string>Amplitude (%)</string>
          </property>
         </widget>
        </item>
-       <item>
+       <item row="1" column="1">
         <widget class="QSpinBox" name="amplitute">
          <property name="maximumSize">
           <size>
@@ -68,44 +91,14 @@
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QLabel" name="label_FFT_Window_Mode">
-         <property name="text">
-          <string>FFT Window Mode</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="FFTWindowMode"/>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>520</y>
-      <width>551</width>
-      <height>42</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_11">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_8">
-       <item>
+       <item row="2" column="0">
         <widget class="QLabel" name="label_Average_Size">
          <property name="text">
           <string>Average Size</string>
          </property>
         </widget>
        </item>
-       <item>
+       <item row="2" column="1">
         <widget class="QSpinBox" name="averageSize">
          <property name="maximumSize">
           <size>
@@ -124,44 +117,14 @@
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_9">
-       <item>
-        <widget class="QLabel" name="label_Foreground_Mode">
-         <property name="text">
-          <string>Foreground Mode</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="foregroundMode"/>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>580</y>
-      <width>531</width>
-      <height>42</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_12">
-     <item>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
+       <item row="3" column="0">
         <widget class="QLabel" name="label_Decay">
          <property name="text">
           <string>Decay (% per step)</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="1">
+       <item row="3" column="1">
         <widget class="QSpinBox" name="decay">
          <property name="maximumSize">
           <size>
@@ -177,424 +140,411 @@
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_10">
-       <item>
-        <widget class="QLabel" name="label_Single_Color_Mode">
-         <property name="text">
-          <string>Single Color Mode</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="singleColorMode"/>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>640</y>
-      <width>534</width>
-      <height>39</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_15">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_13">
-       <item>
+       <item row="4" column="0">
         <widget class="QLabel" name="label_Delay">
          <property name="text">
           <string>Delay (ms)</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLineEdit" name="delay">
-         <property name="inputMethodHints">
-          <set>Qt::ImhDigitsOnly</set>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_Normalization_Offset">
+         <property name="text">
+          <string>Normalization Offset</string>
          </property>
         </widget>
        </item>
+       <item row="5" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QDoubleSpinBox" name="normalizationOffset">
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.040000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_Normalization_Scale">
+         <property name="text">
+          <string>Normalization Scale</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QDoubleSpinBox" name="normalizationScale">
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.500000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_Filter_Constant">
+         <property name="text">
+          <string>Filter Constant</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QDoubleSpinBox" name="filterConstant">
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="value">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_Background_Timeout">
+         <property name="text">
+          <string>Background Timeout</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_Visualization_Preview">
+         <property name="text">
+          <string>Visualization Preview</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QGraphicsView" name="visualizationPreview">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>256</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="interactive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QSpinBox" name="backgroundTimeout">
+           <property name="maximum">
+            <number>3600000</number>
+           </property>
+           <property name="singleStep">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>120</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLineEdit" name="delay">
+           <property name="inputMethodHints">
+            <set>Qt::ImhDigitsOnly</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
       </layout>
      </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_14">
-       <item>
+     <item row="0" column="1">
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Background_Mode">
+         <property name="text">
+          <string>Background Mode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="backgroundMode"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_FFT_Window_Mode">
+         <property name="text">
+          <string>FFT Window Mode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="FFTWindowMode"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_Foreground_Mode">
+         <property name="text">
+          <string>Foreground Mode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="foregroundMode"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_Single_Color_Mode">
+         <property name="text">
+          <string>Single Color Mode</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="singleColorMode"/>
+       </item>
+       <item row="4" column="0">
         <widget class="QLabel" name="label_Average_Mode">
          <property name="text">
           <string>Average Mode</string>
          </property>
         </widget>
        </item>
-       <item>
+       <item row="4" column="1">
         <widget class="QComboBox" name="comboBox_Average_Mode"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_Audio_Device">
+         <property name="text">
+          <string>Audio Device</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="audioDevice"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_Animation_Speed">
+         <property name="text">
+          <string>Animation Speed</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_Reactive_Background">
+         <property name="text">
+          <string>Reactive Background</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QCheckBox" name="reactiveBackground">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_Silent_Background">
+         <property name="text">
+          <string>Silent Background</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QCheckBox" name="silentBackground">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Preferred</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_Save_Settings">
+           <property name="text">
+            <string>Save Settings</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QDoubleSpinBox" name="animationSpeed">
+           <property name="maximum">
+            <double>1000.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>100.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>720</y>
-      <width>291</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_16">
-     <item>
-      <widget class="QLabel" name="label_Normalization_Offset">
-       <property name="text">
-        <string>Normalization Offset</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QDoubleSpinBox" name="normalizationOffset">
-       <property name="maximum">
-        <double>1.000000000000000</double>
-       </property>
-       <property name="singleStep">
-        <double>0.010000000000000</double>
-       </property>
-       <property name="value">
-        <double>0.040000000000000</double>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>730</y>
-      <width>281</width>
-      <height>37</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_17">
-     <item>
-      <widget class="QLabel" name="label_Audio_Device">
-       <property name="text">
-        <string>Audio Device</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QComboBox" name="audioDevice"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>1030</y>
-      <width>561</width>
-      <height>66</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_18">
-     <item>
-      <widget class="QLabel" name="label_Visualization_Preview">
-       <property name="text">
-        <string>Visualization Preview</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QGraphicsView" name="visualizationPreview">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>256</width>
-         <height>64</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>256</width>
-         <height>64</height>
-        </size>
-       </property>
-       <property name="verticalScrollBarPolicy">
-        <enum>Qt::ScrollBarAlwaysOff</enum>
-       </property>
-       <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarAlwaysOff</enum>
-       </property>
-       <property name="interactive">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>1130</y>
-      <width>511</width>
-      <height>39</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_19">
-     <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_Save_Settings">
-       <property name="text">
-        <string>Save Settings</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>820</y>
-      <width>261</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_20">
-     <item>
-      <widget class="QLabel" name="label_Normalization_Scale">
-       <property name="text">
-        <string>Normalization Scale</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QDoubleSpinBox" name="normalizationScale">
-       <property name="maximum">
-        <double>1.000000000000000</double>
-       </property>
-       <property name="singleStep">
-        <double>0.100000000000000</double>
-       </property>
-       <property name="value">
-        <double>0.500000000000000</double>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>830</y>
-      <width>268</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_21">
-     <item>
-      <widget class="QLabel" name="label_Animation_Speed">
-       <property name="text">
-        <string>Animation Speed</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QDoubleSpinBox" name="animationSpeed">
-       <property name="maximum">
-        <double>1000.000000000000000</double>
-       </property>
-       <property name="value">
-        <double>100.000000000000000</double>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QSplitter" name="splitter_3">
-    <property name="geometry">
-     <rect>
-      <x>-10</x>
-      <y>890</y>
-      <width>581</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <widget class="QSplitter" name="splitter_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <widget class="QLabel" name="label_Filter_Constant">
-      <property name="text">
-       <string>Filter Constant</string>
-      </property>
-     </widget>
-     <widget class="QDoubleSpinBox" name="filterConstant">
-      <property name="maximum">
-       <double>1.000000000000000</double>
-      </property>
-      <property name="singleStep">
-       <double>0.010000000000000</double>
-      </property>
-      <property name="value">
-       <double>1.000000000000000</double>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QSplitter" name="splitter">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <widget class="QLabel" name="label_Reactive_Background">
-      <property name="text">
-       <string>Reactive Background</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="reactiveBackground">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QSplitter" name="splitter_4">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>960</y>
-      <width>221</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <widget class="QLabel" name="label_Silent_Background">
-     <property name="text">
-      <string>Silent Background</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="silentBackground">
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QSplitter" name="splitter_5">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>970</y>
-      <width>299</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <widget class="QLabel" name="label_Background_Timeout">
-     <property name="text">
-      <string>Background Timeout</string>
-     </property>
-    </widget>
-    <widget class="QSpinBox" name="backgroundTimeout">
-     <property name="maximum">
-      <number>3600000</number>
-     </property>
-     <property name="singleStep">
-      <number>10</number>
-     </property>
-     <property name="value">
-      <number>120</number>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_Background_Mode">
-    <property name="geometry">
-     <rect>
-      <x>306</x>
-      <y>310</y>
-      <width>160</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Background Mode</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="backgroundMode">
-    <property name="geometry">
-     <rect>
-      <x>471</x>
-      <y>310</y>
-      <width>105</width>
-      <height>35</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_Background_Brightness">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>310</y>
-      <width>198</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Background Brightness</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="backgroundBrightness">
-    <property name="geometry">
-     <rect>
-      <x>233</x>
-      <y>310</y>
-      <width>68</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>80</width>
-      <height>16777215</height>
-     </size>
-    </property>
-    <property name="maximum">
-     <number>255</number>
-    </property>
-    <property name="value">
-     <number>255</number>
-    </property>
-   </widget>
+   <zorder>label_GitHub_URL</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>splitter_3</zorder>
+   <zorder>splitter_4</zorder>
+   <zorder>splitter_5</zorder>
+   <zorder>label_FFT_Window_Mode</zorder>
+   <zorder>horizontalSpacer_4</zorder>
+   <zorder>verticalSpacer_2</zorder>
+   <zorder>horizontalSpacer_5</zorder>
+   <zorder>horizontalSpacer_6</zorder>
+   <zorder>horizontalSpacer_7</zorder>
+   <zorder>formLayoutWidget_3</zorder>
+   <zorder>label_GitHub_URL</zorder>
+   <zorder>pushButton_Save_Settings</zorder>
+   <zorder>horizontalSpacer_2</zorder>
+   <zorder>normalizationOffset</zorder>
+   <zorder>horizontalSpacer</zorder>
+   <zorder>normalizationScale</zorder>
+   <zorder>horizontalSpacer_3</zorder>
+   <zorder>filterConstant</zorder>
+   <zorder>horizontalSpacer_4</zorder>
+   <zorder>backgroundTimeout</zorder>
+   <zorder>horizontalSpacer_5</zorder>
+   <zorder>animationSpeed</zorder>
+   <zorder>horizontalSpacer_6</zorder>
+   <zorder>delay</zorder>
+   <zorder>horizontalSpacer_7</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
