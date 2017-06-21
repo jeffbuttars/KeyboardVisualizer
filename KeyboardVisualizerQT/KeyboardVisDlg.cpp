@@ -78,46 +78,46 @@ void KeyboardVisDlg::update()
     scene->clear();
     scene->addPixmap(pixmap);
 
-    ui->graphicsView_Visualization_Preview->show();
+    ui->visualizationPreview->show();
 
     if(vis_ptr->update_ui)
     {
         vis_ptr->update_ui = false;
 
-        ui->lineEdit_Normalization_Offset->setText(QString::number(vis_ptr->nrml_ofst));
-        ui->lineEdit_Normalization_Scale->setText(QString::number(vis_ptr->nrml_scl));
-        ui->lineEdit_Animation_Speed->setText(QString::number(vis_ptr->anim_speed));
-        ui->lineEdit_Filter_Constant->setText(QString::number(vis_ptr->filter_constant));
+        ui->normalizationOffset->setValue(QString::number(vis_ptr->nrml_ofst));
+        ui->normalizationScale->setValue(QString::number(vis_ptr->nrml_scl));
+        ui->animationSpeed->setValue(QString::number(vis_ptr->anim_speed));
+        ui->filterConstant->setValue(QString::number(vis_ptr->filter_constant));
 
         ui->amplitude->setText(QString::number(vis_ptr->amplitude));
         ui->backgroundBrightness->setText(QString::number(vis_ptr->bkgd_bright));
-        ui->lineEdit_Average_Size->setText(QString::number(vis_ptr->avg_size));
-        ui->lineEdit_Decay->setText(QString::number(vis_ptr->decay));
-        ui->lineEdit_Delay->setText(QString::number(vis_ptr->delay));
-        ui->lineEdit_Background_Timeout->setText(QString::number(vis_ptr->background_timeout));
+        ui->averageSize->setText(QString::number(vis_ptr->avg_size));
+        ui->decay->setText(QString::number(vis_ptr->decay));
+        ui->delay->setText(QString::number(vis_ptr->delay));
+        ui->background_Timeout->setText(QString::number(vis_ptr->background_timeout));
 
-        ui->comboBox_Average_Mode->blockSignals(true);
-        ui->comboBox_Average_Mode->setCurrentIndex(vis_ptr->avg_mode);
-        ui->comboBox_Average_Mode->blockSignals(false);
+        ui->averageMode->blockSignals(true);
+        ui->averageMode->setCurrentIndex(vis_ptr->avg_mode);
+        ui->averageMode->blockSignals(false);
 
-        ui->comboBox_Background_Mode->blockSignals(true);
-        ui->comboBox_Background_Mode->setCurrentIndex(vis_ptr->bkgd_mode);
-        ui->comboBox_Background_Mode->blockSignals(false);
+        ui->backgroundMode->blockSignals(true);
+        ui->backgroundMode->setCurrentIndex(vis_ptr->bkgd_mode);
+        ui->backgroundMode->blockSignals(false);
 
-        ui->comboBox_FFT_Window_Mode->blockSignals(true);
-        ui->comboBox_FFT_Window_Mode->setCurrentIndex(vis_ptr->window_mode);
-        ui->comboBox_FFT_Window_Mode->blockSignals(false);
+        ui->FFTWindowMode->blockSignals(true);
+        ui->FFTWindowMode->setCurrentIndex(vis_ptr->window_mode);
+        ui->FFTWindowMode->blockSignals(false);
 
-        ui->comboBox_Foreground_Mode->blockSignals(true);
-        ui->comboBox_Foreground_Mode->setCurrentIndex(vis_ptr->frgd_mode);
-        ui->comboBox_Foreground_Mode->blockSignals(false);
+        ui->foregroundMode->blockSignals(true);
+        ui->foregroundMode->setCurrentIndex(vis_ptr->frgd_mode);
+        ui->foregroundMode->blockSignals(false);
 
-        ui->comboBox_Single_Color_Mode->blockSignals(true);
-        ui->comboBox_Single_Color_Mode->setCurrentIndex(vis_ptr->single_color_mode);
-        ui->comboBox_Single_Color_Mode->blockSignals(false);
+        ui->singleColorMode->blockSignals(true);
+        ui->singleColorMode->setCurrentIndex(vis_ptr->single_color_mode);
+        ui->singleColorMode->blockSignals(false);
 
-        ui->checkBox_Reactive_Background->setChecked(vis_ptr->reactive_bkgd);
-        ui->checkBox_Silent_Background->setChecked(vis_ptr->silent_bkgd);
+        ui->reactiveBackground->setChecked(vis_ptr->reactive_bkgd);
+        ui->silentBackground->setChecked(vis_ptr->silent_bkgd);
     }
 }
 
