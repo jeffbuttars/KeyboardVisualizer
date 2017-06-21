@@ -31,43 +31,43 @@ private slots:
 
     void show_hide();
 
-    void on_lineEdit_Background_Brightness_textChanged(const QString &arg1);
+    void on_backgroundBrightness_valueChanged(const int arg1);
 
-    void on_lineEdit_Amplitude_textChanged(const QString &arg1);
+    void on_amplitude_valueChanged(const int arg1);
 
-    void on_lineEdit_Average_Size_textChanged(const QString &arg1);
+    void on_averageSize_valueChanged(const int arg1);
 
-    void on_lineEdit_Decay_textChanged(const QString &arg1);
+    void on_decay_valueChanged(const int arg1);
 
-    void on_lineEdit_Delay_textChanged(const QString &arg1);
+    void on_delay_valueChanged(const int arg1);
 
-    void on_lineEdit_Normalization_Offset_textChanged(const QString &arg1);
+    void on_normalizationOffset_valueChanged(const double arg1);
 
-    void on_lineEdit_Normalization_Scale_textChanged(const QString &arg1);
+    void on_normalizationScale_valueChanged(const double arg1);
 
-    void on_lineEdit_Animation_Speed_textChanged(const QString &arg1);
+    void on_animationSpeed_valueChanged(const double arg1);
 
-    void on_comboBox_FFT_Window_Mode_currentIndexChanged(int index);
+    void on_FFTWindowMode_currentIndexChanged(int index);
 
-    void on_comboBox_Background_Mode_currentIndexChanged(int index);
+    void on_backgroundMode_currentIndexChanged(int index);
 
-    void on_comboBox_Foreground_Mode_currentIndexChanged(int index);
+    void on_foregroundMode_currentIndexChanged(int index);
 
-    void on_comboBox_Single_Color_Mode_currentIndexChanged(int index);
+    void on_singleColorMode_currentIndexChanged(int index);
 
-    void on_comboBox_Average_Mode_currentIndexChanged(int index);
+    void on_averageMode_currentIndexChanged(int index);
 
     void on_pushButton_Save_Settings_clicked();
 
-    void on_checkBox_Reactive_Background_clicked(bool checked);
+    void on_reactiveBackground_clicked(bool checked);
 
-    void on_comboBox_Audio_Device_currentIndexChanged(int index);
+    void on_audioDevice_currentIndexChanged(int index);
 
-    void on_lineEdit_Filter_Constant_textChanged(const QString &arg1);
+    void on_filterConstant_valueChanged(const double arg1);
 
-    void on_checkBox_Silent_Background_clicked(bool checked);
+    void on_silentBackground_clicked(bool checked);
 
-    void on_lineEdit_Background_Timeout_textChanged(const QString &arg1);
+    void on_backgroundTimeout_valueChanged(const int arg1);
 
 private:
     Ui::KeyboardVisualizerDlg *ui;

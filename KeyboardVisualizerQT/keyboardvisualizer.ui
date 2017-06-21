@@ -79,7 +79,7 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QSpinBox" name="amplitute">
+        <widget class="QSpinBox" name="amplitude">
          <property name="maximumSize">
           <size>
            <width>75</width>
@@ -339,9 +339,15 @@
        <item row="4" column="1">
         <layout class="QHBoxLayout" name="horizontalLayout_7">
          <item>
-          <widget class="QLineEdit" name="delay">
-           <property name="inputMethodHints">
-            <set>Qt::ImhDigitsOnly</set>
+          <widget class="QSpinBox" name="delay">
+           <property name="maximum">
+            <number>3600000</number>
+           </property>
+           <property name="singleStep">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>100</number>
            </property>
           </widget>
          </item>
@@ -412,7 +418,7 @@
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QComboBox" name="comboBox_Average_Mode"/>
+        <widget class="QComboBox" name="averageMode"/>
        </item>
        <item row="5" column="0">
         <widget class="QLabel" name="label_Audio_Device">
@@ -517,34 +523,8 @@
      </item>
     </layout>
    </widget>
-   <zorder>label_GitHub_URL</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>splitter_3</zorder>
-   <zorder>splitter_4</zorder>
-   <zorder>splitter_5</zorder>
-   <zorder>label_FFT_Window_Mode</zorder>
-   <zorder>horizontalSpacer_4</zorder>
-   <zorder>verticalSpacer_2</zorder>
-   <zorder>horizontalSpacer_5</zorder>
-   <zorder>horizontalSpacer_6</zorder>
-   <zorder>horizontalSpacer_7</zorder>
    <zorder>formLayoutWidget_3</zorder>
    <zorder>label_GitHub_URL</zorder>
-   <zorder>pushButton_Save_Settings</zorder>
-   <zorder>horizontalSpacer_2</zorder>
-   <zorder>normalizationOffset</zorder>
-   <zorder>horizontalSpacer</zorder>
-   <zorder>normalizationScale</zorder>
-   <zorder>horizontalSpacer_3</zorder>
-   <zorder>filterConstant</zorder>
-   <zorder>horizontalSpacer_4</zorder>
-   <zorder>backgroundTimeout</zorder>
-   <zorder>horizontalSpacer_5</zorder>
-   <zorder>animationSpeed</zorder>
-   <zorder>horizontalSpacer_6</zorder>
-   <zorder>delay</zorder>
-   <zorder>horizontalSpacer_7</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
